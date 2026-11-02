@@ -1,0 +1,63 @@
+\documentclass[aspectratio=169]{beamer} % 16:9比例
+% 设置字体支持
+\usepackage[UTF8]{ctex}
+\usepackage[T1]{fontenc}
+\usefonttheme[onlymath]{serif} % 数学公式使用衬线字体
+\setsansfont{Arial} % 设置无衬线字体为Arial
+
+% 引入常用宏包
+\usepackage{multicol} % 用于显示多栏内容
+\usepackage{booktabs} % 用于美化表格
+\usepackage{calligra} % 用于感谢页的手写字体
+\usepackage{graphicx} % 用于插入图片
+\usepackage{fontawesome5}
+
+\usepackage{zju} % 自定义的beamer主题样式文件
+\usepackage{ragged2e} % 提供了更好的两端对齐算法
+
+\title{浙江大学Beamer模板}
+\author{徐翌森}
+\institute{系统5班}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}[plain,noframenumbering]
+    \titlepage
+    \vspace{-0.5cm}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.15\textwidth]{zju/zju_logo.pdf}
+    \end{figure}
+\end{frame}
+
+\section{第一章节}
+
+\begin{frame}{第一章内容}
+    \textcolor{zju_blue}{蓝色文字}
+\end{frame}
+
+\section{第二章节}
+
+\begin{frame}{第一章内容}
+    \textcolor{zju_red}{红色文字}
+\end{frame}
+
+\appendix
+
+\section*{致谢}
+
+\begin{frame}[plain,noframenumbering]
+    \begin{center}
+        \vspace{1cm}
+        \hrulefill 
+        \raisebox{-2ex}{\quad {\Huge\calligra Thanks!} \quad} 
+        \hrulefill
+
+        \vspace{1cm}
+
+        {\Large 请老师批评指正}
+    \end{center}
+\end{frame} 
+
+\end{document}
